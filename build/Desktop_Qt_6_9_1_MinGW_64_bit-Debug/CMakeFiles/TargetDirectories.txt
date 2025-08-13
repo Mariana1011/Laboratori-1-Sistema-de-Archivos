@@ -1,0 +1,3 @@
+D:/Mariana Sofía/USA/Semestre 5/Sistemas Embebidos/laboratorio/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/laboratorio.dir
+D:/Mariana Sofía/USA/Semestre 5/Sistemas Embebidos/laboratorio/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+D:/Mariana Sofía/USA/Semestre 5/Sistemas Embebidos/laboratorio/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir

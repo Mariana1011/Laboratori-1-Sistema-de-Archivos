@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.5)
+project(laboratorio C)
+set(CMAKE_C_STANDARD 99)
+include_directories(${CMAKE_SOURCE_DIR})
+add_executable(laboratorio main.c compression.c compression.h filesystem.c filesystem.h tree.c tree.h)

@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "laboratorio",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "laboratorio::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-laboratorio-Debug-bc08adeddcc54c6c97c1.json",
+					"name" : "laboratorio",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Mariana Sof\u00eda/USA/Semestre 5/Sistemas Embebidos/laboratorio/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug",
+		"source" : "D:/Mariana Sof\u00eda/USA/Semestre 5/Sistemas Embebidos/laboratorio"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
