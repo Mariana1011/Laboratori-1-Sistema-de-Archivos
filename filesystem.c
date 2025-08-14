@@ -51,7 +51,7 @@ bool fs_create(FileSystem* fs, const char* filename) {
     uint8_t *comp = lzw_compress(buf, orig_size, &comp_size);
     free(buf);
     if (!comp) {
-        printf("Error: compresión fallida\n");
+        printf("Error: compresion fallida\n");
         return false;
     }
 
