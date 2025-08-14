@@ -23,7 +23,7 @@ void load_all_files(FileSystem* fs, const char* folder) {
         return;
     }
 
-    printf("[INFO] Loading from %s\n", folder);
+    printf("Cargando desde %s\n", folder);
     start = clock(); // Inicia el conteo de tiempo
 
     // Recorrer todos los archivos dentro del directorio
@@ -48,10 +48,10 @@ void load_all_files(FileSystem* fs, const char* folder) {
     // Mostrar tamaño actual del archivo de almacenamiento
     struct stat st;
     if (stat(fs->storage_file, &st) == 0)
-        printf("[INFO] storage size %lld bytes\n", (long long)st.st_size);
+        printf("Almacenamiento %lld bytes\n", (long long)st.st_size);
 
     // Mostrar resumen
-    printf("[INFO] Loaded %d files in %.3f s\n", count, total);
+    printf("Cargado %d archivos en %.3f s\n", count, total);
 }
 
 int main() {

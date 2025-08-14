@@ -24,7 +24,7 @@ void fs_init(FileSystem* fs, const char* storage_name) {
     FILE *f = fopen(fs->storage_file, "ab");
     if (f) fclose(f);
 
-    printf("[DEBUG] Inicializado: %s\n", fs->storage_file);
+    printf("Inicializado: %s\n", fs->storage_file);
 }
 
 // --------------------------------------------------------
@@ -71,7 +71,7 @@ bool fs_create(FileSystem* fs, const char* filename) {
     // Insertar en el índice (B-tree)
     btree_insert(&fs->index, filename, pos);
 
-    printf("[DEBUG] Guardado '%s' (orig %zu bytes -> comp %zu bytes)\n",
+    printf("Guardado '%s' (orig %zu bytes -> comp %zu bytes)\n",
            filename, orig_size, comp_size);
     return true;
 }
@@ -106,7 +106,7 @@ bool fs_read(FileSystem* fs, const char* filename) {
     uint8_t *orig = lzw_decompress(comp, comp_size, &orig_size);
     free(comp);
     if (!orig) {
-        printf("Error: descompresión fallida\n");
+        printf("Error: descompresion fallida\n");
         return false;
     }
 
@@ -123,7 +123,7 @@ bool fs_read(FileSystem* fs, const char* filename) {
 // --------------------------------------------------------
 bool fs_delete(FileSystem* fs, const char* filename) {
     btree_delete(&fs->index, filename);
-    printf("[DEBUG] Eliminado '%s' del índice (datos aún en disco)\n", filename);
+    printf("Eliminado '%s' del indice \n", filename);
     return true;
 }
 
@@ -200,7 +200,7 @@ bool fs_save(FileSystem* fs, const char* save_name) {
     fclose(meta);
     fclose(storage);
 
-    printf("[DEBUG] Guardado metadata en %s (%u archivos)\n", meta_file, count);
+    printf("Guardado en %s (%u archivos)\n", meta_file, count);
     return true;
 }
 
@@ -231,6 +231,6 @@ bool fs_load(FileSystem* fs, const char* load_name) {
 
     fclose(meta);
 
-    printf("[DEBUG] Cargado metadata desde %s (%u archivos)\n", meta_file, count);
+    printf("Cargado metadata desde %s (%u archivos)\n", meta_file, count);
     return true;
 }
